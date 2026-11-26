@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; worker-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E0E0D">
+<meta name="color-scheme" content="dark">
+<title>Цены — M1 Detailing (новый дизайн)</title>
+<link rel="icon" href="/img/favicon.ico" sizes="any">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-normal-cyrillic.woff2" crossorigin>
+<link rel="stylesheet" href="/css/style.css?v=27">
+<script src="/js/main.js?v=26"></script>
+</head>
+<body>
+
+<header class="top">
+  <a class="top__logo" href="/" aria-label="M1 Detailing"><img src="/img/logo-440.webp" alt="M1 Detailing" width="600" height="269"></a>
+  <nav class="top__nav" aria-label="Разделы">
+    <div class="dd" id="navServices">
+      <button type="button" class="dd__btn" aria-expanded="false" aria-controls="navServicesMenu">Услуги <span class="dd__chev" aria-hidden="true"></span></button>
+      <div class="dd__menu" id="navServicesMenu">
+        <a href="/car-wash/">Мойка</a>
+        <a href="/interior-cleaning/">Химчистка</a>
+        <a href="/polishing/">Полировка</a>
+        <a href="/ceramic-coating/">Керамика</a>
+        <a href="/window-tinting/">Тонировка</a>
+        <a href="/glass-polishing/">Полировка и ремонт стёкол</a>
+        <a href="/risk-zones/">Оклейка зон риска</a>
+        <a href="/ppf/">Оклейка PPF</a>
+        <a href="/color-wrap/">Цветная оклейка</a>
+        <a class="dd__all" href="/prices/">Все услуги и цены →</a>
+      </div>
+    </div>
+    <a href="/prices/" aria-current="page">Цены</a>
+    <a href="/works/">Работы</a>
+    <a href="/reviews/">Отзывы</a>
+    <a href="/contacts/">Контакты</a>
+    <a href="/about/">О нас</a>
+  </nav>
+  <a class="top__phone" href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a>
+  <button type="button" class="cut cut--gold top__cta" data-open="calc">Рассчитать стоимость <span class="cut__arr" aria-hidden="true">→</span></button>
+  <button type="button" class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+</header>
+
+<!-- Мобильное меню: список заполняется из меню «Услуги» скриптом js/main.js -->
+<div class="mnav" id="mnav" hidden>
+  <div class="mnav__in">
+    <p class="mnav__tag">Услуги</p>
+    <nav class="mnav__list" id="mnavList" aria-label="Услуги"></nav>
+    <div class="mnav__links">
+      <a href="/prices/" aria-current="page">Цены</a>
+      <a href="/works/">Работы</a>
+      <a href="/reviews/">Отзывы</a>
+      <a href="/contacts/">Контакты</a>
+      <a href="/about/">О нас</a>
+    </div>
+    <a class="mnav__phone" href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a>
+    <p class="mnav__note">Ежедневно, 11:00–23:00 · Глазынино, ТЦ «Глазынино»</p>
+  </div>
+</div>
+
+<main>
+
+<section class="phead">
+  <div class="wrap phead__in">
+    <div class="phead__text">
+      <p class="eyebrow up">Цены · Глазынино</p>
+      <h1 class="ladder up">
+        <span class="ladder__l">Цены</span>
+        <span class="ladder__l ladder__l--in">на <em>детейлинг</em></span>
+      </h1>
+      <p class="phead__lead up">Ниже — цены по всем направлениям студии. Они указаны «от» для легкового автомобиля: для большинства услуг у кроссоверов и внедорожников стоимость выше — её видно в таблице по классам. Точную сумму назовём после осмотра.</p>
+      <div class="hero__btns up">
+      <a class="cut cut--gold" href="#contacts" data-open="calc">Рассчитать стоимость <span class="cut__arr" aria-hidden="true">→</span></a>
+      <a class="cut cut--line" href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="paper paper--prices">
+  <div class="wrap">
+<!--n:pricelist-->
+    <nav class="chips up" aria-label="Разделы прайса"><a class="chip chip--gold" href="#p-classes">По классам авто</a><a class="chip" href="#p-body">Мойка и кузов</a><a class="chip" href="#p-interior">Уход за салоном</a><a class="chip" href="#p-dry">Химчистка салона</a><a class="chip" href="#p-polish">Полировка</a><a class="chip" href="#p-moto">Мойка мотоцикла</a><a class="chip" href="#p-ppf">Оклейка PPF</a><a class="chip" href="#p-risk">Оклейка зон риска</a><a class="chip" href="#p-color">Цветная оклейка</a><a class="chip" href="#p-ceramic">Керамика</a><a class="chip" href="#p-tint">Тонировка</a><a class="chip" href="#p-glass">Полировка и ремонт стёкол</a></nav>
+    <div class="pcat up" id="p-body">
+      <div class="pcat__head"><h2>Мойка и кузов</h2><a href="/car-wash/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Экспресс-мойка, двухфазная<small>Мойка кузова по европейской технологии, включая коврики и пороги</small></span><b>от&nbsp;1&nbsp;800&nbsp;₽</b></li>
+      <li><span>Экспресс-мойка, трёхфазная<small>Жидкий полимер, химчистка колёсных дисков (наружная часть), насадок выхлопных труб, коврики, пороги и консервация шин</small></span><b>от&nbsp;2&nbsp;900&nbsp;₽</b></li>
+      <li><span>Iron.X<small>Очистка кузова от металлических вкраплений и известкового налёта</small></span><b>от&nbsp;3&nbsp;500&nbsp;₽</b></li>
+      <li><span>Удаление реагента, битума, смолы<small>Растительного происхождения и прочих загрязнений</small></span><b>от&nbsp;2&nbsp;500&nbsp;₽</b></li>
+      <li><span>Бесконтактная мойка днища на подъёмнике</span><b>от&nbsp;4&nbsp;000&nbsp;₽</b></li>
+      <li><span>Химчистка колёсных дисков<small>Удаление битума и налёта от тормозных колодок, за 1 шт.</small></span><b>800&nbsp;₽</b></li>
+      <li><span>Подготовка к полировке</span><b>от&nbsp;9&nbsp;000&nbsp;₽</b></li>
+      <li><span>Химчистка кузова без механического воздействия<small>Химическими составами</small></span><b>от&nbsp;9&nbsp;000&nbsp;₽</b></li>
+      <li><span>Гидрофобное покрытие — по кругу<small>Со снятием водного камня</small></span><b>от&nbsp;8&nbsp;000&nbsp;₽</b></li>
+      <li><span>Гидрофобное покрытие — передняя полусфера<small>Со снятием водного камня</small></span><b>от&nbsp;5&nbsp;000&nbsp;₽</b></li>
+      <li><span>Гидрофобное покрытие — люк<small>Со снятием водного камня</small></span><b>от&nbsp;1&nbsp;000&nbsp;₽</b></li>
+      <li><span>Гидрофобное покрытие — панорама<small>Со снятием водного камня</small></span><b>от&nbsp;3&nbsp;000&nbsp;₽</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-interior">
+      <div class="pcat__head"><h2>Уход за салоном</h2><a href="/interior-cleaning/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Влажная уборка салона</span><b>от&nbsp;800&nbsp;₽</b></li>
+      <li><span>Детейлинг-комплекс салона<small>Уход за всеми поверхностями специальными составами: кожа, пластик, стекло</small></span><b>от&nbsp;2&nbsp;200&nbsp;₽</b></li>
+      <li><span>Пылесос багажного отделения (Le Teach)</span><b>600&nbsp;₽</b></li>
+      <li><span>Пылесос салона</span><b>от&nbsp;800&nbsp;₽</b></li>
+      <li><span>Чистка кожаных элементов салона (Le Teach)</span><b>от&nbsp;12&nbsp;000&nbsp;₽</b></li>
+      <li><span>Обработка сухим туманом</span><b>3&nbsp;000&nbsp;₽</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-dry">
+      <div class="pcat__head"><h2>Химчистка салона</h2><a href="/interior-cleaning/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Полная химчистка салона<small>Включая багажное отделение</small></span><b>от&nbsp;25&nbsp;000&nbsp;₽</b></li>
+      <li><span>Химчистка одного места<small>Сиденье, пол, дверная карта</small></span><b>8&nbsp;000&nbsp;₽</b></li>
+      <li><span>Дезинфекция салона и кондиционера<small>Озоногенератор Ozonbox</small></span><b>3&nbsp;500&nbsp;₽</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-polish">
+      <div class="pcat__head"><h2>Полировка</h2><a href="/polishing/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Коррекция лака для новых автомобилей</span><b>от&nbsp;20&nbsp;000&nbsp;₽</b></li>
+      <li><span>Восстановительная полировка</span><b>от&nbsp;35&nbsp;000&nbsp;₽</b></li>
+      <li><span>Полировка одной детали</span><b>от&nbsp;3&nbsp;000&nbsp;₽</b></li>
+      <li><span>Полировка передних фар</span><b>от&nbsp;3&nbsp;000&nbsp;₽</b></li>
+      <li><span>Полировка задних фар</span><b>от&nbsp;4&nbsp;000&nbsp;₽</b></li>
+      <li><span>Полировка лакированных элементов салона</span><b>от&nbsp;1&nbsp;500&nbsp;₽</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-moto">
+      <div class="pcat__head"><h2>Мойка мотоцикла</h2><a href="/car-wash/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Бережная мойка мотоцикла<small>С применением разных составов по европейской технологии. Мойка начинается через 30 минут после заезда</small></span><b>2&nbsp;200&nbsp;₽</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-ppf">
+      <div class="pcat__head"><h2>Оклейка PPF</h2><span class="pcat__note">цены уточняются</span><a href="/ppf/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Полная оклейка кузова<small>Антигравийная полиуретановая плёнка на все окрашенные детали</small></span><b>после осмотра</b></li>
+      <li><span>Оклейка одной детали<small>Капот, крыло, дверь или бампер</small></span><b>после осмотра</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-risk">
+      <div class="pcat__head"><h2>Оклейка зон риска</h2><span class="pcat__note">цены уточняются</span><a href="/risk-zones/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Зоны риска<small>Капот, бампер, крылья, фары, зеркала и зоны под ручками дверей</small></span><b>после осмотра</b></li>
+      <li><span>Пороги и зона погрузки багажника</span><b>после осмотра</b></li>
+      <li><span>Оклейка фар</span><b>после осмотра</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-color">
+      <div class="pcat__head"><h2>Цветная оклейка</h2><span class="pcat__note">цены уточняются</span><a href="/color-wrap/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Полная смена цвета<small>Цветная полиуретановая плёнка</small></span><b>после осмотра</b></li>
+      <li><span>Оклейка крыши</span><b>после осмотра</b></li>
+      <li><span>Антихром<small>Молдинги, решётка, рейлинги</small></span><b>после осмотра</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-ceramic">
+      <div class="pcat__head"><h2>Керамика</h2><span class="pcat__note">цены уточняются</span><a href="/ceramic-coating/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Керамическое покрытие кузова<small>Один слой, после мойки и подготовки</small></span><b>после осмотра</b></li>
+      <li><span>Полировка + керамика<small>Комплекс: восстановительная полировка и керамика</small></span><b>после осмотра</b></li>
+      <li><span>Керамика дисков<small>Комплект из 4 дисков</small></span><b>после осмотра</b></li>
+      <li><span>Керамика кожи салона</span><b>после осмотра</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-tint">
+      <div class="pcat__head"><h2>Тонировка</h2><span class="pcat__note">цены уточняются</span><a href="/window-tinting/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Задняя полусфера<small>Задние боковые и заднее стекло</small></span><b>после осмотра</b></li>
+      <li><span>Передние боковые стёкла</span><b>после осмотра</b></li>
+      <li><span>Лобовое стекло, атермальная плёнка</span><b>после осмотра</b></li>
+    </ul>
+    </div>
+    <div class="pcat up" id="p-glass">
+      <div class="pcat__head"><h2>Полировка и ремонт стёкол</h2><a href="/glass-polishing/">Об услуге →</a></div>
+      <ul class="plist plist--wide">
+      <li><span>Полировка лобового стекла<small>Потёртости, мутный налёт, лёгкие следы от дворников</small></span><b>после осмотра</b></li>
+      <li><span>Шлифовка и полировка лобового стекла<small>Царапины от дворников, щёток и скребков</small></span><b>после осмотра</b></li>
+      <li><span>Полировка боковых и заднего стекла<small>Потёртости и мутность</small></span><b>после осмотра</b></li>
+      <li><span>Ремонт скола<small>Заполнение скола прозрачным составом</small></span><b>после осмотра</b></li>
+      <li><span>Ремонт трещины<small>Чтобы трещина не росла дальше</small></span><b>после осмотра</b></li>
+    </ul>
+    </div>
+    <p class="pnote up">Все цены — ориентир. Точную стоимость назовём по телефону или после осмотра автомобиля.</p>
+
+    <div class="pclass up" id="p-classes">
+      <div class="pcat__head"><h2>Основные услуги по классам</h2></div>
+      <div class="ptable" role="table" aria-label="Цены по классам автомобиля">
+        <div class="ptable__row ptable__row--head" role="row"><span role="columnheader">Работа</span><span role="columnheader">Легковой</span><span role="columnheader">Кроссовер</span><span role="columnheader">Внедорожник</span></div>
+        <div class="ptable__row" role="row"><span class="ptable__name" role="cell">Экспресс-мойка, трёхфазная</span><span role="cell">2&nbsp;900&nbsp;₽</span><span role="cell">3&nbsp;100&nbsp;₽</span><span role="cell">3&nbsp;300&nbsp;₽</span></div>
+        <div class="ptable__row" role="row"><span class="ptable__name" role="cell">Полная химчистка салона</span><span role="cell">25&nbsp;000&nbsp;₽</span><span role="cell">30&nbsp;000&nbsp;₽</span><span role="cell">35&nbsp;000&nbsp;₽</span></div>
+        <div class="ptable__row" role="row"><span class="ptable__name" role="cell">Коррекция лака для новых автомобилей</span><span role="cell">20&nbsp;000&nbsp;₽</span><span role="cell">22&nbsp;000&nbsp;₽</span><span role="cell">24&nbsp;000&nbsp;₽</span></div>
+        <div class="ptable__row" role="row"><span class="ptable__name" role="cell">Восстановительная полировка</span><span role="cell">35&nbsp;000&nbsp;₽</span><span role="cell">40&nbsp;000&nbsp;₽</span><span role="cell">45&nbsp;000&nbsp;₽</span></div>
+      </div>
+      <p class="pnote">Легковой — седаны, хэтчбеки и универсалы. Кроссовер — компактные и средние модели повышенной проходимости. Внедорожник — большие внедорожники и минивэны.</p>
+    </div>
+<!--/n:pricelist-->
+
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head sec-head--split">
+      <h2 class="ladder up">
+        <span class="ladder__l">Что влияет</span>
+        <span class="ladder__l ladder__l--in">на <em>стоимость</em></span>
+      </h2>
+      <p class="sec-aside sec-aside--dark up">Двух одинаковых машин не бывает — стоимость считаем под конкретный автомобиль и задачу.</p>
+    </div>
+    <ol class="why__grid">
+      <li class="why__item up"><span class="why__n">01</span><h3>Класс автомобиля</h3><p>Размер кузова и салона: легковой, кроссовер или внедорожник.</p></li>
+      <li class="why__item up"><span class="why__n">02</span><h3>Состояние</h3><p>Царапины, налёт, сильные загрязнения салона — всё это добавляет шагов работы.</p></li>
+      <li class="why__item up"><span class="why__n">03</span><h3>Материалы</h3><p>Плёнка, керамика и химия разного уровня — подбираем под задачу и бюджет.</p></li>
+      <li class="why__item up"><span class="why__n">04</span><h3>Объём работ</h3><p>Одна деталь, отдельная зона или вся машина целиком.</p></li>
+      <li class="why__item up"><span class="why__n">05</span><h3>Комплекс</h3><p>Несколько услуг за один визит считаем одной сметой.</p></li>
+      <li class="why__item up"><span class="why__n">06</span><h3>Осмотр</h3><p>Помогает точно оценить состояние машины до начала работ.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap faq__in">
+    <div>
+      <p class="eyebrow up">Вопросы и ответы</p>
+      <h2 class="ladder up">
+        <span class="ladder__l">Частые вопросы</span>
+        <span class="ladder__l ladder__l--in"><em>о цене</em></span>
+      </h2>
+    </div>
+    <div class="faq__list">
+      <details class="up"><summary>Почему цены указаны «от»?</summary><p>Итог зависит от размера машины, состояния кузова или салона и выбранных материалов. «От» — стартовая цена для легкового автомобиля в обычном состоянии.</p></details>
+      <details class="up"><summary>Как узнать точную стоимость для моей машины?</summary><p>Нажмите «Рассчитать стоимость» и оставьте телефон — перезвоним и назовём цену. Можно сразу позвонить или приехать в студию на осмотр.</p></details>
+      <details class="up"><summary>Как понять, какой у меня класс автомобиля?</summary><p>Легковой — седаны, хэтчбеки и универсалы. Кроссовер — компактные и средние модели повышенной проходимости. Внедорожник — большие внедорожники и минивэны. Если сомневаетесь, подскажем по телефону.</p></details>
+      <details class="up"><summary>Можно ли совместить несколько услуг?</summary><p>Да. Например, полировку и керамику или мойку и химчистку салона удобно делать за один визит. Посчитаем комплекс целиком.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="contacts">
+  <div class="wrap book__in">
+    <div class="book__info">
+      <h2 class="ladder up">
+        <span class="ladder__l">Запишитесь</span>
+        <span class="ladder__l"><em>в студию</em></span>
+      </h2>
+      <p class="book__lead up">Оставьте заявку — перезвоним в течение 15&nbsp;минут и подтвердим время.</p>
+      <dl class="book__list up">
+        <div><dt>Телефон</dt><dd><a class="book__phone" href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a></dd></div>
+        <div><dt>Часы</dt><dd>Ежедневно, 11:00–23:00</dd></div>
+        <div><dt>Адрес</dt><dd>Московская обл., Одинцовский г.о., д.&nbsp;Глазынино, 121, ТЦ «Глазынино»</dd></div>
+      </dl>
+      <div class="hero__btns up">
+        <a class="cut cut--line" href="tel:+79032444222">Позвонить <span class="cut__arr" aria-hidden="true">→</span></a>
+        <a class="cut cut--line" href="https://t.me/m1detailer" target="_blank" rel="noopener">Telegram <span class="cut__arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <form class="bform" id="bookingForm" novalidate>
+      <p class="bform__eyebrow">Онлайн-заявка</p>
+      <h3 class="bform__title">Перезвоним и&nbsp;всё подскажем</h3>
+
+      <div class="bform__row">
+        <label class="fld">
+          <span class="fld__l">Имя</span>
+          <input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" maxlength="60" required>
+        </label>
+        <label class="fld">
+          <span class="fld__l">Телефон</span>
+          <input type="tel" id="bkPhone" name="phone" value="+7" inputmode="tel" autocomplete="tel" required>
+        </label>
+      </div>
+
+      <label class="fld">
+        <span class="fld__l">Услуга</span>
+        <select name="service" required>
+          <option value="">Выберите услугу</option>
+          <option>Оклейка PPF</option>
+          <option>Оклейка зон риска</option>
+          <option>Цветная оклейка</option>
+          <option>Керамика</option>
+          <option>Полировка</option>
+          <option>Химчистка</option>
+          <option>Мойка</option>
+          <option>Тонировка</option>
+          <option>Полировка и ремонт стёкол</option>
+          <option>Не знаю, нужна консультация</option>
+        </select>
+      </label>
+
+      <div class="bform__row">
+        <label class="fld">
+          <span class="fld__l">Дата</span>
+          <input type="date" id="bkDate" name="date" required>
+        </label>
+        <label class="fld">
+          <span class="fld__l">Время</span>
+          <select id="bkTime" name="time" required></select>
+        </label>
+      </div>
+
+      <label class="fld">
+        <span class="fld__l">Автомобиль <i>необязательно</i></span>
+        <input type="text" name="car" placeholder="Например: BMW X5" maxlength="60" autocomplete="off">
+      </label>
+
+      <label class="fld">
+        <span class="fld__l">Пожелания <i>необязательно</i></span>
+        <textarea name="comment" rows="2" maxlength="500" placeholder="Например: керамика, есть царапины на капоте"></textarea>
+      </label>
+
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <label class="chk">
+        <input type="checkbox" name="consent">
+        <span class="chk__box" aria-hidden="true"></span>
+        <span>Я даю <a href="/consent/" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и принимаю <a href="/privacy/" target="_blank" rel="noopener">политику конфиденциальности</a></span>
+      </label>
+
+      <button type="submit" class="cut cut--gold bform__send" id="bkSubmit">Отправить заявку <span class="cut__arr" aria-hidden="true">→</span></button>
+      <p class="bform__status" id="bkStatus" role="status" aria-live="polite"></p>
+      <p class="bform__note">Это заявка, а не подтверждённая запись: мы свяжемся с вами и подтвердим время.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="foot__brand">M1 Detailing</span>
+    <span>ООО «ФОРТУНА ДЕТЕЙЛИНГ» · ОГРН 1265000058069 · ИНН 5032400554</span>
+    <span>143006, Московская обл., г.о. Одинцовский, д. Глазынино, стр. 121 · <a href="mailto:m1-detailing@outlook.com">m1-detailing@outlook.com</a></span>
+    <span><a href="/privacy/">Политика конфиденциальности</a> · <a href="/consent/">Согласие на обработку данных</a></span>
+  </div>
+</footer>
+
+<!-- Панель быстрых действий внизу экрана (только на телефоне) -->
+<nav class="mbar" aria-label="Быстрые действия">
+  <a class="mbar__btn" href="tel:+79032444222"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>Позвонить</span></a>
+  <button type="button" class="mbar__btn mbar__btn--main" data-open="calc"><span>Рассчитать</span></button>
+  <button type="button" class="mbar__btn" data-open="cb"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg><span>Написать</span></button>
+</nav>
+
+
+
+<!-- ===== Окно «Рассчитать стоимость» ===== -->
+<div class="lmodal" id="calcModal" hidden>
+  <div class="lmodal__backdrop" data-close="calc"></div>
+  <div class="lmodal__dialog" role="dialog" aria-modal="true" aria-labelledby="calcTitle">
+    <button type="button" class="lmodal__x" data-close="calc" aria-label="Закрыть"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <p class="bform__eyebrow">Расчёт стоимости</p>
+    <h2 class="lmodal__title" id="calcTitle">Рассчитаем цену на&nbsp;вашу машину</h2>
+    <p class="lmodal__text">Оставьте телефон. Перезвоним ежедневно с 11:00 до 23:00 и&nbsp;назовём стоимость. Имя и&nbsp;автомобиль можно не&nbsp;указывать.</p>
+    <p class="lmodal__text">Не хотите заполнять? Позвоните: <a href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a></p>
+    <form class="lform" data-kind="calc" data-label="Расчёт стоимости" novalidate>
+      <label class="fld"><span class="fld__l">Имя <i>необязательно</i></span><input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" maxlength="60"></label>
+      <label class="fld"><span class="fld__l">Телефон</span><input type="tel" name="phone" value="+7" inputmode="tel" autocomplete="tel" required></label>
+      <details class="lform__more">
+        <summary>Автомобиль, услуга, комментарий</summary>
+        <label class="fld"><span class="fld__l">Автомобиль <i>необязательно</i></span><input type="text" name="car" placeholder="Например: BMW X5" maxlength="60" autocomplete="off"></label>
+        <label class="fld"><span class="fld__l">Услуга <i>необязательно</i></span><select name="service"><option value="">Выберите услугу</option><option>Оклейка PPF</option><option>Оклейка зон риска</option><option>Цветная оклейка</option><option>Керамика</option><option>Полировка</option><option>Химчистка</option><option>Мойка</option><option>Тонировка</option><option>Полировка и ремонт стёкол</option><option>Не знаю, нужна консультация</option></select></label>
+        <label class="fld"><span class="fld__l">Комментарий <i>необязательно</i></span><textarea name="comment" rows="2" maxlength="500" placeholder="Например: керамика, есть царапины на капоте"></textarea></label>
+      </details>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="chk"><input type="checkbox" name="consent"><span class="chk__box" aria-hidden="true"></span><span>Я даю <a href="/consent/" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и принимаю <a href="/privacy/" target="_blank" rel="noopener">политику конфиденциальности</a></span></label>
+      <button type="submit" class="cut cut--gold bform__send">Отправить заявку <span class="cut__arr" aria-hidden="true">→</span></button>
+      <p class="bform__status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<!-- ===== Обратная связь: кнопка справа внизу и панель ===== -->
+<div class="cbw" id="cbWidget">
+  <div class="cbw__panel" id="cbPanel" role="dialog" aria-labelledby="cbTitle" hidden>
+    <button type="button" class="lmodal__x" data-close="cb" aria-label="Закрыть"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h2 class="cbw__title" id="cbTitle">Обратная связь</h2>
+    <p class="lmodal__text">Оставьте заявку — мы вам перезвоним.</p>
+    <form class="lform" data-kind="callback" data-label="Обратная связь" data-name-required="1" novalidate>
+      <label class="fld"><span class="fld__l">Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" maxlength="60"></label>
+      <label class="fld"><span class="fld__l">Телефон</span><input type="tel" name="phone" value="+7" inputmode="tel" autocomplete="tel" required></label>
+      <label class="fld"><span class="fld__l">Что интересует <i>необязательно</i></span><textarea name="comment" rows="2" maxlength="500" placeholder="Например: керамика на BMW X5"></textarea></label>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="chk"><input type="checkbox" name="consent"><span class="chk__box" aria-hidden="true"></span><span>Я даю <a href="/consent/" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и принимаю <a href="/privacy/" target="_blank" rel="noopener">политику конфиденциальности</a></span></label>
+      <button type="submit" class="cut cut--gold bform__send">Отправить <span class="cut__arr" aria-hidden="true">→</span></button>
+      <p class="bform__status" role="status" aria-live="polite"></p>
+      <p class="cbw__call">или позвоните: <a href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a> · <a href="https://t.me/m1detailer" target="_blank" rel="noopener">Telegram</a></p>
+    </form>
+  </div>
+  <button type="button" class="cbw__toggle" id="cbToggle" data-open="cb" aria-expanded="false" aria-controls="cbPanel"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span><b>Обратная связь</b><small>Перезвоним за&nbsp;15&nbsp;минут</small></span></button>
+</div>
+
+</body>
+</html>

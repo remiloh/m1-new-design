@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; worker-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E0E0D">
+<meta name="color-scheme" content="dark">
+<title>Полировка кузова — M1 Detailing (новый дизайн)</title>
+<link rel="icon" href="/img/favicon.ico" sizes="any">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-normal-cyrillic.woff2" crossorigin>
+<link rel="stylesheet" href="/css/style.css?v=27">
+<script src="/js/main.js?v=26"></script>
+</head>
+<body>
+
+<header class="top">
+  <a class="top__logo" href="/" aria-label="M1 Detailing"><img src="/img/logo-440.webp" alt="M1 Detailing" width="600" height="269"></a>
+  <nav class="top__nav" aria-label="Разделы">
+    <div class="dd" id="navServices">
+      <button type="button" class="dd__btn" aria-expanded="false" aria-controls="navServicesMenu">Услуги <span class="dd__chev" aria-hidden="true"></span></button>
+      <div class="dd__menu" id="navServicesMenu">
+        <a href="/car-wash/">Мойка</a>
+        <a href="/interior-cleaning/">Химчистка</a>
+        <a href="/polishing/" aria-current="page">Полировка</a>
+        <a href="/ceramic-coating/">Керамика</a>
+        <a href="/window-tinting/">Тонировка</a>
+        <a href="/glass-polishing/">Полировка и ремонт стёкол</a>
+        <a href="/risk-zones/">Оклейка зон риска</a>
+        <a href="/ppf/">Оклейка PPF</a>
+        <a href="/color-wrap/">Цветная оклейка</a>
+        <a class="dd__all" href="/prices/">Все услуги и цены →</a>
+      </div>
+    </div>
+    <a href="/prices/">Цены</a>
+    <a href="/works/">Работы</a>
+    <a href="/reviews/">Отзывы</a>
+    <a href="/contacts/">Контакты</a>
+    <a href="/about/">О нас</a>
+  </nav>
+  <a class="top__phone" href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a>
+  <button type="button" class="cut cut--gold top__cta" data-open="calc">Рассчитать стоимость <span class="cut__arr" aria-hidden="true">→</span></button>
+  <button type="button" class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+</header>
+
+<!-- Мобильное меню: список заполняется из меню «Услуги» скриптом js/main.js -->
+<div class="mnav" id="mnav" hidden>
+  <div class="mnav__in">
+    <p class="mnav__tag">Услуги</p>
+    <nav class="mnav__list" id="mnavList" aria-label="Услуги"></nav>
+    <div class="mnav__links">
+      <a href="/prices/">Цены</a>
+      <a href="/works/">Работы</a>
+      <a href="/reviews/">Отзывы</a>
+      <a href="/contacts/">Контакты</a>
+      <a href="/about/">О нас</a>
+    </div>
+    <a class="mnav__phone" href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a>
+    <p class="mnav__note">Ежедневно, 11:00–23:00 · Глазынино, ТЦ «Глазынино»</p>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== Первый экран услуги ===== -->
+<section class="hero hero--polishing">
+  <div class="hero__text">
+    <div>
+    <p class="eyebrow up">Полировка кузова · Глазынино</p>
+    <h1 class="ladder up">
+      <span class="ladder__l">Вернём лаку</span>
+      <span class="ladder__l ladder__l--in">глубину цвета</span>
+      <span class="ladder__l">и <em>блеск</em></span>
+    </h1>
+    </div>
+    <div>
+    <p class="hero__lead up">Убираем паутинку от моек, мелкие царапины, потёртости и помутнение лака. Подбираем вид полировки по состоянию кузова — для свежей машины и для автомобиля с пробегом.</p>
+    <div class="hero__btns up">
+      <a class="cut cut--gold" href="#contacts" data-open="calc">Рассчитать стоимость <span class="cut__arr" aria-hidden="true">→</span></a>
+      <a class="cut cut--line" href="#prices">Цены</a>
+    </div>
+    </div>
+  </div>
+  <figure class="hero__photo">
+    <img src="/img/polishing-hero.webp" alt="Полировка капота светлого автомобиля машинкой" width="1260" height="803" fetchpriority="high">
+  </figure>
+</section>
+
+<!-- ===== Полоса цифр ===== -->
+<section class="specs" aria-label="Коротко об услуге">
+  <div class="spec up"><span class="spec__v">2 вида</span><span class="spec__l">коррекция и восстановительная</span></div>
+  <div class="spec up"><span class="spec__v">3 класса</span><span class="spec__l">легковой, кроссовер, внедорожник</span></div>
+  <div class="spec up"><span class="spec__v">от&nbsp;<!--n:num:polish:Коррекция лака для новых автомобилей-->20&nbsp;000<!--/n:num-->&nbsp;<small>₽</small></span><span class="spec__l">коррекция лака</span></div>
+</section>
+
+<!-- ===== Цены (светлый блок) ===== -->
+<section class="paper" id="prices">
+  <div class="wrap">
+    <div class="sec-head sec-head--split">
+      <div>
+        <p class="eyebrow eyebrow--dark up">Цены</p>
+        <h2 class="ladder ladder--dark up">
+          <span class="ladder__l">Сколько стоит</span>
+          <span class="ladder__l ladder__l--in"><em>полировка</em></span>
+        </h2>
+      </div>
+      <p class="sec-aside up">Цена зависит от класса и состояния кузова. Ориентиры — в таблице, точную сумму назовём после осмотра.</p>
+    </div>
+<!--n:prices:polishing-->
+    <div class="ptable up" role="table" aria-label="Цены по классам автомобиля">
+      <div class="ptable__row ptable__row--head" role="row"><span role="columnheader">Работа</span><span role="columnheader">Легковой</span><span role="columnheader">Кроссовер</span><span role="columnheader">Внедорожник</span></div>
+      <div class="ptable__row" role="row"><span class="ptable__name" role="cell">Коррекция лака для новых автомобилей</span><span role="cell">20&nbsp;000&nbsp;₽</span><span role="cell">22&nbsp;000&nbsp;₽</span><span role="cell">24&nbsp;000&nbsp;₽</span></div>
+      <div class="ptable__row ptable__row--hl" role="row"><span class="ptable__name" role="cell">Восстановительная полировка</span><span role="cell">35&nbsp;000&nbsp;₽</span><span role="cell">40&nbsp;000&nbsp;₽</span><span role="cell">45&nbsp;000&nbsp;₽</span></div>
+    </div>
+    <h3 class="sub up">Отдельные элементы</h3>
+    <ul class="plist plist--wide up">
+      <li><span>Полировка одной детали</span><b>от&nbsp;3&nbsp;000&nbsp;₽</b></li>
+      <li><span>Полировка передних фар</span><b>от&nbsp;3&nbsp;000&nbsp;₽</b></li>
+      <li><span>Полировка задних фар</span><b>от&nbsp;4&nbsp;000&nbsp;₽</b></li>
+      <li><span>Полировка лакированных элементов салона</span><b>от&nbsp;1&nbsp;500&nbsp;₽</b></li>
+    </ul>
+<!--/n:prices-->
+
+  </div>
+</section>
+
+<!-- ===== Когда нужна ===== -->
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head sec-head--split">
+      <h2 class="ladder up">
+        <span class="ladder__l">Когда нужна</span>
+        <span class="ladder__l ladder__l--in"><em>полировка</em></span>
+      </h2>
+      <p class="sec-aside sec-aside--dark up">Узнали свою машину — приезжайте на осмотр. Честно скажем, что уйдёт полностью, а что останется.</p>
+    </div>
+    <ol class="why__grid">
+      <li class="why__item up"><span class="why__n">01</span><h3>Паутинка после моек</h3><p>Мелкие круговые царапины от щёток и грязной ветоши — особенно видны на солнце и на тёмном цвете.</p></li>
+      <li class="why__item up"><span class="why__n">02</span><h3>Тусклый лак</h3><p>Цвет кажется «плоским» даже на чистой машине: верхний слой лака потерял блеск.</p></li>
+      <li class="why__item up"><span class="why__n">03</span><h3>Потёртости и мелкие царапины</h3><p>Следы у ручек дверей, на багажнике, от веток и сумок. Уходят, если не глубже слоя лака.</p></li>
+      <li class="why__item up"><span class="why__n">04</span><h3>Следы прошлой полировки</h3><p>Разводы и «голограммы», которые остаются после спешной работы без финишного этапа.</p></li>
+      <li class="why__item up"><span class="why__n">05</span><h3>Перед керамикой или плёнкой</h3><p>Покрытие сохраняет лак в том виде, в каком он есть. Поэтому сначала убираем дефекты, потом защищаем.</p></li>
+      <li class="why__item up"><span class="why__n">06</span><h3>Перед продажей</h3><p>Ухоженный блестящий кузов выглядит дороже и помогает продать машину быстрее.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== Виды полировки ===== -->
+<section class="kinds">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow up">Виды полировки</p>
+      <h2 class="ladder up">
+        <span class="ladder__l">Два вида</span>
+        <span class="ladder__l ladder__l--in"><em>полировки</em></span>
+      </h2>
+    </div>
+    <div class="kinds__grid">
+      <article class="kind up">
+        <p class="kind__tag">Для новых автомобилей</p>
+        <h3 class="kind__name">Коррекция лака</h3>
+        <p class="kind__sub">Мягкая полировка свежего лака</p>
+        <ul class="kind__list">
+          <li>Убирает мелкие дефекты с завода и после транспортировки</li>
+          <li>Возвращает ровный глубокий блеск</li>
+          <li>Готовит кузов к керамике или плёнке</li>
+        </ul>
+        <p class="kind__price">от&nbsp;20&nbsp;000&nbsp;₽</p>
+      </article>
+      <article class="kind kind--gold up">
+        <p class="kind__tag">Для машин с пробегом</p>
+        <h3 class="kind__name">Восстановительная</h3>
+        <p class="kind__sub">Полировка в несколько этапов</p>
+        <ul class="kind__list">
+          <li>Убирает паутинку, потёртости и помутнение</li>
+          <li>Возвращает глубину цвета</li>
+          <li>Подходит перед продажей и перед защитой кузова</li>
+        </ul>
+        <p class="kind__price">от&nbsp;35&nbsp;000&nbsp;₽</p>
+      </article>
+    </div>
+    <div class="hint up">
+      <p class="hint__tag">Что выбрать</p>
+      <p>Машине меньше года и лак почти без следов — обычно хватает коррекции: лёгкой полировки, которая убирает мелкие следы. Видна паутинка, царапины, цвет потускнел — нужна восстановительная полировка. Какой вид нужен вашей машине, скажем после осмотра.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Процесс ===== -->
+<!--n:svc:polishing-->
+<section class="work" id="works">
+  <div class="wrap">
+    <div class="work__head">
+      <h2 class="ladder up">
+        <span class="ladder__l">Как это</span>
+        <span class="ladder__l ladder__l--in"><em>выглядит у нас</em></span>
+      </h2>
+      <p class="work__lead up">Белый Mercedes S-класса W140: царапины на лаке выпилили, кузов довели до глубокого блеска.</p>
+      <a class="cut cut--line up" href="/works/">Все работы</a>
+    </div>
+    <div class="work__grid work__grid--1"><figure class="work__ph wedge"><img src="/img/works/mercedes-s-w140-kuzov.jpg" alt="Полировка — работа M1 Detailing" loading="lazy"></figure></div>
+  </div>
+</section>
+<!--/n:svc-->
+
+<section class="steps">
+  <div class="wrap">
+    <div class="steps__head">
+      <div>
+        <p class="eyebrow up">Как проходит работа</p>
+        <h2 class="ladder up">
+          <span class="ladder__l">Пять шагов</span>
+          <span class="ladder__l"><em>под ярким светом</em></span>
+        </h2>
+      </div>
+      <p class="steps__aside up">Каждый этап проверяем под ярким светом, чтобы не пропустить дефекты.</p>
+    </div>
+    <div class="steps__grid steps__grid--5 obs">
+      <span class="steps__line" aria-hidden="true"></span>
+      <div class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__n">Шаг 01</span><h3>Мойка и очистка</h3><p>Моем кузов, убираем битум, металлические вкрапления и остатки старых средств — полировать можно только чистый лак.</p></div>
+      <div class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__n">Шаг 02</span><h3>Осмотр лака</h3><p>Смотрим кузов под ярким светом, отмечаем дефекты и решаем, что можно убрать полировкой.</p></div>
+      <div class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__n">Шаг 03</span><h3>Полировка</h3><p>Работаем по деталям: от более абразивных паст к финишным, пока лак не станет ровным и глубоким.</p></div>
+      <div class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__n">Шаг 04</span><h3>Проверка</h3><p>После каждого этапа смотрим кузов под светом и при необходимости дорабатываем.</p></div>
+      <div class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__n">Шаг 05</span><h3>Выдача</h3><p>Показываем результат и подсказываем, как ухаживать за кузовом, чтобы блеск держался дольше.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== После полировки ===== -->
+<section class="after">
+  <div class="wrap after__in">
+    <div>
+      <p class="eyebrow up">После полировки</p>
+      <h2 class="ladder up">
+        <span class="ladder__l">Закрепите</span>
+        <span class="ladder__l ladder__l--in"><em>результат</em></span>
+      </h2>
+      <p class="after__lead up">Полировка возвращает блеск, но не защищает лак. Чтобы результат держался, кузов можно покрыть керамикой или оклеить плёнкой.</p>
+    </div>
+    <div class="after__cards">
+      <div class="acard up"><p class="acard__tag">Связка №&nbsp;1</p><h3>Керамика</h3><p>Глубокий блеск, вода и грязь хуже держатся на кузове, машину проще мыть.</p></div>
+      <div class="acard up"><p class="acard__tag">Связка №&nbsp;2</p><h3>Оклейка плёнкой</h3><p>Защищает лак от сколов и царапин — целиком или только в зонах риска.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Вопросы ===== -->
+<section class="faq">
+  <div class="wrap faq__in">
+    <div>
+      <p class="eyebrow up">Вопросы и ответы</p>
+      <h2 class="ladder up">
+        <span class="ladder__l">Частые</span>
+        <span class="ladder__l ladder__l--in"><em>вопросы</em></span>
+      </h2>
+    </div>
+    <div class="faq__list">
+      <details class="up"><summary>Уберёт ли полировка глубокие царапины?</summary><p>Полировка убирает дефекты в пределах слоя лака. Если царапина дошла глубже лака, до металла, её не отполировать — нужен локальный ремонт. Посмотрим на осмотре и скажем честно.</p></details>
+      <details class="up"><summary>Сколько раз можно полировать машину?</summary><p>Каждая полировка снимает тонкий слой лака, поэтому часто полировать не нужно. Чтобы блеск держался дольше, после полировки кузов лучше защитить керамикой или плёнкой.</p></details>
+      <details class="up"><summary>Нужна ли полировка перед керамикой или плёнкой?</summary><p>Да, желательно. Покрытие сохраняет лак таким, какой он есть, вместе с дефектами. Поэтому сначала полируем, потом защищаем.</p></details>
+      <details class="up"><summary>Сколько стоит полировка моей машины?</summary><p>Ориентиры по классам — в таблице выше. Точная цена зависит от состояния лака: оставьте заявку или приезжайте на осмотр.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="contacts">
+  <div class="wrap book__in">
+    <div class="book__info">
+      <h2 class="ladder up">
+        <span class="ladder__l">Запишитесь</span>
+        <span class="ladder__l"><em>в студию</em></span>
+      </h2>
+      <p class="book__lead up">Оставьте заявку — перезвоним в течение 15&nbsp;минут и подтвердим время.</p>
+      <dl class="book__list up">
+        <div><dt>Телефон</dt><dd><a class="book__phone" href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a></dd></div>
+        <div><dt>Часы</dt><dd>Ежедневно, 11:00–23:00</dd></div>
+        <div><dt>Адрес</dt><dd>Московская обл., Одинцовский г.о., д.&nbsp;Глазынино, 121, ТЦ «Глазынино»</dd></div>
+      </dl>
+      <div class="hero__btns up">
+        <a class="cut cut--line" href="tel:+79032444222">Позвонить <span class="cut__arr" aria-hidden="true">→</span></a>
+        <a class="cut cut--line" href="https://t.me/m1detailer" target="_blank" rel="noopener">Telegram <span class="cut__arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <form class="bform" id="bookingForm" novalidate>
+      <p class="bform__eyebrow">Онлайн-заявка</p>
+      <h3 class="bform__title">Уточним состояние и&nbsp;подберём вид полировки</h3>
+
+      <div class="bform__row">
+        <label class="fld">
+          <span class="fld__l">Имя</span>
+          <input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" maxlength="60" required>
+        </label>
+        <label class="fld">
+          <span class="fld__l">Телефон</span>
+          <input type="tel" id="bkPhone" name="phone" value="+7" inputmode="tel" autocomplete="tel" required>
+        </label>
+      </div>
+
+      <label class="fld">
+        <span class="fld__l">Услуга</span>
+        <select name="service" required>
+          <option value="">Выберите услугу</option>
+          <option>Оклейка PPF</option>
+          <option>Оклейка зон риска</option>
+          <option>Цветная оклейка</option>
+          <option>Керамика</option>
+          <option selected>Полировка</option>
+          <option>Химчистка</option>
+          <option>Мойка</option>
+          <option>Тонировка</option>
+          <option>Полировка и ремонт стёкол</option>
+          <option>Не знаю, нужна консультация</option>
+        </select>
+      </label>
+
+      <div class="bform__row">
+        <label class="fld">
+          <span class="fld__l">Дата</span>
+          <input type="date" id="bkDate" name="date" required>
+        </label>
+        <label class="fld">
+          <span class="fld__l">Время</span>
+          <select id="bkTime" name="time" required></select>
+        </label>
+      </div>
+
+      <label class="fld">
+        <span class="fld__l">Автомобиль <i>необязательно</i></span>
+        <input type="text" name="car" placeholder="Например: BMW X5" maxlength="60" autocomplete="off">
+      </label>
+
+      <label class="fld">
+        <span class="fld__l">Пожелания <i>необязательно</i></span>
+        <textarea name="comment" rows="2" maxlength="500" placeholder="Например: керамика, есть царапины на капоте"></textarea>
+      </label>
+
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <label class="chk">
+        <input type="checkbox" name="consent">
+        <span class="chk__box" aria-hidden="true"></span>
+        <span>Я даю <a href="/consent/" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и принимаю <a href="/privacy/" target="_blank" rel="noopener">политику конфиденциальности</a></span>
+      </label>
+
+      <button type="submit" class="cut cut--gold bform__send" id="bkSubmit">Отправить заявку <span class="cut__arr" aria-hidden="true">→</span></button>
+      <p class="bform__status" id="bkStatus" role="status" aria-live="polite"></p>
+      <p class="bform__note">Это заявка, а не подтверждённая запись: мы свяжемся с вами и подтвердим время.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="foot__brand">M1 Detailing</span>
+    <span>ООО «ФОРТУНА ДЕТЕЙЛИНГ» · ОГРН 1265000058069 · ИНН 5032400554</span>
+    <span>143006, Московская обл., г.о. Одинцовский, д. Глазынино, стр. 121 · <a href="mailto:m1-detailing@outlook.com">m1-detailing@outlook.com</a></span>
+    <span><a href="/privacy/">Политика конфиденциальности</a> · <a href="/consent/">Согласие на обработку данных</a></span>
+  </div>
+</footer>
+
+<!-- Панель быстрых действий внизу экрана (только на телефоне) -->
+<nav class="mbar" aria-label="Быстрые действия">
+  <a class="mbar__btn" href="tel:+79032444222"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>Позвонить</span></a>
+  <button type="button" class="mbar__btn mbar__btn--main" data-open="calc"><span>Рассчитать</span></button>
+  <button type="button" class="mbar__btn" data-open="cb"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg><span>Написать</span></button>
+</nav>
+
+
+
+<!-- ===== Окно «Рассчитать стоимость» ===== -->
+<div class="lmodal" id="calcModal" hidden>
+  <div class="lmodal__backdrop" data-close="calc"></div>
+  <div class="lmodal__dialog" role="dialog" aria-modal="true" aria-labelledby="calcTitle">
+    <button type="button" class="lmodal__x" data-close="calc" aria-label="Закрыть"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <p class="bform__eyebrow">Расчёт стоимости</p>
+    <h2 class="lmodal__title" id="calcTitle">Рассчитаем цену на&nbsp;вашу машину</h2>
+    <p class="lmodal__text">Оставьте телефон. Перезвоним ежедневно с 11:00 до 23:00 и&nbsp;назовём стоимость. Имя и&nbsp;автомобиль можно не&nbsp;указывать.</p>
+    <p class="lmodal__text">Не хотите заполнять? Позвоните: <a href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a></p>
+    <form class="lform" data-kind="calc" data-label="Расчёт стоимости" novalidate>
+      <label class="fld"><span class="fld__l">Имя <i>необязательно</i></span><input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" maxlength="60"></label>
+      <label class="fld"><span class="fld__l">Телефон</span><input type="tel" name="phone" value="+7" inputmode="tel" autocomplete="tel" required></label>
+      <details class="lform__more">
+        <summary>Автомобиль, услуга, комментарий</summary>
+        <label class="fld"><span class="fld__l">Автомобиль <i>необязательно</i></span><input type="text" name="car" placeholder="Например: BMW X5" maxlength="60" autocomplete="off"></label>
+        <label class="fld"><span class="fld__l">Услуга <i>необязательно</i></span><select name="service"><option value="">Выберите услугу</option><option>Оклейка PPF</option><option>Оклейка зон риска</option><option>Цветная оклейка</option><option>Керамика</option><option>Полировка</option><option>Химчистка</option><option>Мойка</option><option>Тонировка</option><option>Полировка и ремонт стёкол</option><option>Не знаю, нужна консультация</option></select></label>
+        <label class="fld"><span class="fld__l">Комментарий <i>необязательно</i></span><textarea name="comment" rows="2" maxlength="500" placeholder="Например: керамика, есть царапины на капоте"></textarea></label>
+      </details>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="chk"><input type="checkbox" name="consent"><span class="chk__box" aria-hidden="true"></span><span>Я даю <a href="/consent/" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и принимаю <a href="/privacy/" target="_blank" rel="noopener">политику конфиденциальности</a></span></label>
+      <button type="submit" class="cut cut--gold bform__send">Отправить заявку <span class="cut__arr" aria-hidden="true">→</span></button>
+      <p class="bform__status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<!-- ===== Обратная связь: кнопка справа внизу и панель ===== -->
+<div class="cbw" id="cbWidget">
+  <div class="cbw__panel" id="cbPanel" role="dialog" aria-labelledby="cbTitle" hidden>
+    <button type="button" class="lmodal__x" data-close="cb" aria-label="Закрыть"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h2 class="cbw__title" id="cbTitle">Обратная связь</h2>
+    <p class="lmodal__text">Оставьте заявку — мы вам перезвоним.</p>
+    <form class="lform" data-kind="callback" data-label="Обратная связь" data-name-required="1" novalidate>
+      <label class="fld"><span class="fld__l">Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" maxlength="60"></label>
+      <label class="fld"><span class="fld__l">Телефон</span><input type="tel" name="phone" value="+7" inputmode="tel" autocomplete="tel" required></label>
+      <label class="fld"><span class="fld__l">Что интересует <i>необязательно</i></span><textarea name="comment" rows="2" maxlength="500" placeholder="Например: керамика на BMW X5"></textarea></label>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="chk"><input type="checkbox" name="consent"><span class="chk__box" aria-hidden="true"></span><span>Я даю <a href="/consent/" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и принимаю <a href="/privacy/" target="_blank" rel="noopener">политику конфиденциальности</a></span></label>
+      <button type="submit" class="cut cut--gold bform__send">Отправить <span class="cut__arr" aria-hidden="true">→</span></button>
+      <p class="bform__status" role="status" aria-live="polite"></p>
+      <p class="cbw__call">или позвоните: <a href="tel:+79032444222"><span class="nw">+7 903 244-42-22</span></a> · <a href="https://t.me/m1detailer" target="_blank" rel="noopener">Telegram</a></p>
+    </form>
+  </div>
+  <button type="button" class="cbw__toggle" id="cbToggle" data-open="cb" aria-expanded="false" aria-controls="cbPanel"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span><b>Обратная связь</b><small>Перезвоним за&nbsp;15&nbsp;минут</small></span></button>
+</div>
+
+</body>
+</html>
